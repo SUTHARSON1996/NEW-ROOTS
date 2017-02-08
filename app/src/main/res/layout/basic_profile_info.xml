@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout_profile_info">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BASIC ACCOUNT DETAILS"
+            android:id="@+id/text_acc_details_head"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/articleBar"
+            android:gravity="center"
+            android:background="@color/articleBar"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_acc_details_head"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:id="@+id/linear_layout_acc_image">
+
+            <LinearLayout
+                android:id="@+id/nested_linear_layout_abt_you_nested1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/button_padding"
+                    android:id="@+id/basic_account_detail_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_group_black_48dp"
+                    android:background="@drawable/round_button_profile_pic"
+                    android:padding="@dimen/button_padding"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nested_linear_layout_abt_you_nested2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+                <Button
+                    android:layout_marginLeft="@dimen/button_padding"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corner_articlepost"
+                    android:text="Change PIC"
+                    android:id="@+id/basic_acc_change_image"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/linear_layout_acc_image"
+            android:id="@+id/linearLayout_basic_profile_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Name for Account : "
+                android:id="@+id/test_basic_acc_name"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/basic_acount_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/linearLayout_basic_profile_name"
+            android:id="@+id/linearLayout_basic_profile_status">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Status for Account : "
+                android:id="@+id/text_basic_status"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/basic_acount_status" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Details"
+            android:id="@+id/basic_account_details_post_button"
+            android:layout_below="@+id/linearLayout_basic_profile_status"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/success_round_corner"/>
+
+
+    </RelativeLayout>
+</ScrollView>

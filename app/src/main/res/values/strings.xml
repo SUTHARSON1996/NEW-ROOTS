@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewRootsv1</string>
+    <string name="upload_your_articles_here">Upload Your Articles Here :</string>
+    <string name="trending_articles">Trending Articles</string>
+</resources>

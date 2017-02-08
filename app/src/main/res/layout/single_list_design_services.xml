@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="40dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@color/listviewcolor1" >
+
+    <ImageView
+        android:id="@+id/service_img_list"
+        android:layout_gravity="center"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_group_black_48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:id="@+id/service_heading_list"
+            android:text="Services for ......."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/services_desc_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      This services is based on .................."
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Sept 24 2016"
+            android:id="@+id/services_date_list"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>
+
+

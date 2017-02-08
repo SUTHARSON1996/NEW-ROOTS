@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Post your volunteer work request :"
+        android:id="@+id/volunteer_work_request"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_services_button"
+        android:src="@drawable/ic_create_black_24dp"
+        android:background="@drawable/round_corner_articlepost"
+        android:padding="@dimen/button_padding"
+        android:layout_below="@+id/volunteer_work_request"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Volunteer works :"
+        android:id="@+id/volunteer_work_text"
+        android:layout_below="@+id/post_services_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/services_list_view"
+        android:layout_below="@+id/volunteer_work_text"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Product Order by phone page"
+            android:id="@+id/text_service_post_head"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/articleBar"
+            android:gravity="center"
+            android:background="@color/articleBar"
+            android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_margin="@dimen/button_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contact Details"
+        android:id="@+id/text_contact_details"
+        android:layout_below="@+id/text_service_post_head"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="address line1"
+        android:id="@+id/text_address_line1"
+        android:layout_below="@+id/text_contact_details"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="address line2"
+        android:id="@+id/text_address_line2"
+        android:layout_below="@+id/text_address_line1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone : 1234567890"
+        android:id="@+id/text_phone_no"
+        android:layout_below="@+id/text_address_line2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+

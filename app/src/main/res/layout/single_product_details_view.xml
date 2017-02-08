@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/products_page_single_prod_scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product title here"
+        android:id="@+id/product_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/articleBar"
+        android:gravity="center"
+        android:background="@color/articleBar"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:padding="@dimen/button_padding"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/product_image"
+        android:src="@drawable/agri"
+        android:layout_below="@+id/product_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/product_image"
+        android:id="@+id/linear_layout_size_item"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/prod_size_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:gravity="center"
+            android:text="SIZE"
+            android:background="@color/articlesListView"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod_item_text_view"
+            android:gravity="center"
+            android:padding="@dimen/button_padding"
+            android:text="ITEM"
+            android:background="@color/articlesListView"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <RatingBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod_review_bar"
+            android:numStars="5"
+            android:rating="3.5"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear_layout_size_item"
+        android:id="@+id/linear_layout_product_price"
+        android:background="@drawable/round_corner_articlepost">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs"
+            android:padding="5dp"
+            android:gravity="start"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="499"
+            android:textSize="50dp"
+            android:padding="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear_layout_product_price"
+        android:id="@+id/linear_layout_product_price_save_discount">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="MRP : 999"
+            android:gravity="end"
+            android:padding="5dp"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="SAVE : 500"
+            android:gravity="start"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_cod_tac"
+        android:layout_below="@+id/linear_layout_product_price_save_discount"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This product is available as free delevery"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This product is available For Cash On Delevery"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="INCLUSIVE OF ALL TAXES(*Terms And Conditions Applied)"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_stock_button"
+        android:layout_below="@id/linear_layout_cod_tac"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:background="@drawable/success_round_corner"
+            android:text="IN STOCK"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_order_via_button_col"
+        android:layout_below="@+id/linear_layout_stock_button"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+        <Button
+            android:padding="@dimen/button_padding"
+            android:layout_margin="2dp"
+            android:background="@drawable/round_corner_articlepost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Online"
+            android:id="@+id/order_online_button"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_margin="2dp"
+            android:padding="@dimen/button_padding"
+            android:background="@drawable/round_corner_articlepost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order via phone"
+            android:id="@+id/order_by_phone"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_layout_order_via_button_col"
+        android:id="@+id/linear_layout_seller_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/product_page_reseller_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_group_black_48dp"
+            android:background="@color/articlesListView"
+            android:padding="@dimen/button_padding"/>
+        <LinearLayout
+            android:id="@+id/nested_linear_layout_seller_info"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/product_page_reseller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/button_padding"
+                android:text="NAME : SELLER123"
+                android:layout_gravity="center"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/seller_ratingBar"
+                android:numStars="5"
+                android:rating="3.5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_desc_prod"
+        android:layout_below="@id/linear_layout_seller_info"
+        android:background="@color/listviewcolor"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description about the product"
+            android:padding="@dimen/button_padding"/>
+
+        <TextView
+            android:paddingLeft="@dimen/button_padding"
+            android:paddingRight="@dimen/button_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="           This product is so and so so and so so and so so and so so and so so and so so and so so and so so and so so and so so and so so and so"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear_layout_desc_prod"
+        android:id="@+id/linear_layout_desc_table"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:background="@color/listviewcolor"
+                android:padding="5dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Product name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:background="@color/listviewcolor1"
+                android:padding="5dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Brand "
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Brand name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Dimension"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="a x b x c"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor1">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Warrenty "
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Limited warrenty"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Seller name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor1">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Type"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Agri"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_recomended_for_you"
+        android:layout_below="@+id/linear_layout_desc_table">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Recomended For YOU : "
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_recomended_prod"
+        android:layout_below="@+id/linear_layout_recomended_for_you">
+
+        <ImageView
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_prod1"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/dscn2105s"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_prod2"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/dscn2132s"
+            android:layout_margin="5dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout_review_prod_star"
+        android:layout_below="@+id/linear_layout_recomended_prod"
+        android:layout_centerHorizontal="true"
+        android:background="@color/articlesListView"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews : "
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/seller_ratingBar_review"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <Button
+            android:id="@+id/product_page_post_review_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST YOUR REVIEW"
+            android:layout_gravity="center"
+            android:padding="@dimen/button_padding"
+            android:background="@drawable/success_round_corner"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout_review_prod"
+        android:layout_below="@+id/linear_layout_review_prod_star"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_padding"
+        android:background="@color/articlesListView"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REVIEW 1"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME  :  RANDOM_PERSON123"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION  :  This product is so awesome......."/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout_review_prod1"
+        android:layout_below="@+id/linear_layout_review_prod"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_padding"
+        android:background="@color/articlesListView"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REVIEW 2"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME  :  RANDOM_PERSON345"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION  :  This product is so awesome......."/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Service 1 heading here"
+        android:id="@+id/text_service_post_head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:backgroundTint="@color/articleBar"
+        android:gravity="center"
+        android:background="@color/articleBar"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/services_image_detailsfrag"
+        android:layout_below="@+id/text_service_post_head"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Volunteer work for ......"
+        android:id="@+id/text_volunteer_work_sub"
+        android:layout_below="@+id/services_image_detailsfrag"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is volunteer work is for so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and so and"
+        android:id="@+id/text_service_desc"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/text_volunteer_work_sub"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="If Intrested plz contact"
+        android:id="@+id/text_contact_head"
+        android:layout_below="@+id/text_service_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name : randomguy"
+        android:gravity="center"
+        android:id="@+id/service_poster_name"
+        android:layout_below="@+id/text_contact_head"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone : 1234567890"
+        android:gravity="center"
+        android:id="@+id/service_poster_phone"
+        android:layout_below="@+id/service_poster_name"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_layout_prod_search_bar">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/equipsales_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:layout_marginBottom="@dimen/button_padding"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dscn2152s"
+            android:id="@+id/scroll_image_prod"
+            android:scaleType="centerInside"
+            android:background="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:verticalSpacing="5dp"
+        android:columnWidth="150dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/equipsales_category_icons_grid"/>
+
+
+    </LinearLayout>

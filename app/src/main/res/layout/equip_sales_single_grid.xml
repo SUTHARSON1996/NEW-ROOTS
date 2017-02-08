@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_image"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/agri"
+        android:adjustViewBounds="true"
+        android:maxWidth="175dp"
+        android:maxHeight="175dp"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:background="#8888"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/relative_Layout"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Title Here"
+            android:textStyle="bold"
+            android:id="@+id/product_title"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/product_title"
+            android:text="A short description"
+            android:id="@+id/product_desc"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS : 450 / piece"
+            android:id="@+id/prod_price"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_below="@+id/product_desc"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

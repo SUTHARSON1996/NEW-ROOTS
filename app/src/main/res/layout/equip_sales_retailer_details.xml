@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/button_padding"
+        android:text="ABOUT THE RESELLER "
+        android:textAlignment="center"
+        android:background="@color/articleBar"
+        android:textColor="@color/black"
+        android:id="@+id/equipsales_abt_reseller_head"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout_seller_info_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/equipsales_abt_reseller_head"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/product_page_reseller_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_group_black_48dp"
+            android:background="@color/articlesListView"
+            android:padding="@dimen/button_padding"/>
+        <LinearLayout
+            android:id="@+id/nested_linear_layout_seller_info_detail"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/product_page_reseller_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/button_padding"
+                android:text="NAME : SELLER123"
+                android:layout_gravity="center"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/seller_ratingBar_detail"
+                android:numStars="5"
+                android:rating="3.5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear_layout_seller_info_detail"
+        android:id="@+id/linear_layout_reseller_table_details"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:background="@color/listviewcolor"
+                android:padding="5dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Reseller name"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:background="@color/listviewcolor1"
+                android:padding="5dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Addresss "
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="221 B Bakers street something ..."
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Reseller since "
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Date of Joining as reseller"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor1">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Phone No "
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="123456789"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Total products sold"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+
+            </TableRow>
+            <TableRow
+                android:padding="5dp"
+                android:background="@color/listviewcolor1">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Customers satisifed"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

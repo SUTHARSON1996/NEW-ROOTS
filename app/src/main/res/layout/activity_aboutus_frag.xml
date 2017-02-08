@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="About US"
+        android:id="@+id/text_service_post_head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:backgroundTint="@color/articleBar"
+        android:gravity="center"
+        android:background="@color/articleBar"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Roots"
+        android:id="@+id/project_name"
+        android:layout_below="@+id/text_service_post_head"
+        android:textColor="@color/success_button"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_padding"
+        android:layout_margin="@dimen/button_padding"
+        android:textStyle="bold|italic"
+        android:fontFamily="cursive"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/project_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="UNITING FARMERS FOR A BETTER, BRIGHT, BEAUTIFUL FUTURE"
+        android:paddingRight="15dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:fontFamily="cursive"
+        android:textColor="@color/tabBarBackground" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp">
+
+        <TextView
+            android:padding="@dimen/button_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Contact Us :"
+            android:id="@+id/contact_us"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:paddingLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No 221B Baker Street"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:paddingLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ramdom address here"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:paddingLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone : 123456789"
+            android:id="@+id/textView7" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

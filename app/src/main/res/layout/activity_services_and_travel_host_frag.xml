@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/travel_frag_button"
+        android:src="@drawable/ic_flight_black_24dp"
+        android:background="@color/listviewcolor1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+
+
+    <ImageButton
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/services_frag_button"
+        android:background="@color/listviewcolor1"
+        android:src="@drawable/ic_group_black_48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+</LinearLayout>

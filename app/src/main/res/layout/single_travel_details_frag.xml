@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/travel_head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_padding"
+        android:background="@color/articleBar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:background="@color/listviewcolor1"
+        android:id="@+id/travel_pic"
+        android:layout_below="@+id/travel_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/village_name"
+        android:layout_below="@+id/travel_pic"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tour_desc"
+        android:layout_below="@+id/village_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_margin="@dimen/button_padding"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tour agenda"
+        android:id="@+id/tour_agenda"
+        android:layout_below="@+id/tour_desc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morning 4:30    -     Wakeup"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/tour_agenda" />
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:text="Morning 5:30    -     Yoga"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8" />
+    <TextView
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morning 6:30    -     something"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9" />
+
+</RelativeLayout>
+</ScrollView>

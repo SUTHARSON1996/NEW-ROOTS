@@ -1,0 +1,58 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/travel_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="8dp"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@color/listviewcolor1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tour_place_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tour1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tour_place_pic"
+            android:text="Village name"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="#8888"
+            android:id="@+id/tour_heading" />
+
+        <TextView
+            android:id="@+id/tour_place_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tour_place_pic"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="Welcome to ------------"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tour_place_title"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:id="@+id/tour_place_desc"
+            android:text="      This place is so and so ans so and so and so ans so and so and so ans so and so and so ans so and so"
+            android:textColor="#666"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
